@@ -50,6 +50,6 @@ h1{
     text-align: center;
     margin-top: 50px;
 }
-.ng-scope{
-    max-height: 100%;
+.deezer-widget-player{
+    height: 400px;
 }
