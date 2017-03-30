@@ -3,20 +3,20 @@
 /**
  * The recipesList component
  */
-// components.component("forecast", {
+components.component("forecast", {
 
-//     templateUrl: '/list.html',
+    templateUrl: '/list.html',
 
-//     bindings: {
-//         recipes: '<',
-//     },
+    bindings: {
+        recipes: '<',
+    },
 
-//     controller: ['WeatherService',
+    controller: ['WeatherService',
 
-//         function (forecastService) {
-//             var vm = this;
+        function (forecastService) {
+            var vm = this;
 
-//             vm.getForecast = () => { alert("coucou") };
-//         }
-//     ]
-// });
+            vm.getForecast = () => { alert("coucou") };
+        }
+    ]
+});

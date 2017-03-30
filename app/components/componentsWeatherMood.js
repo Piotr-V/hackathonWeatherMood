@@ -6,20 +6,20 @@
 const components = angular.module('weather.components', []);
 
 
-components.component("forecast", {
+// components.component("forecast", {
 
-    templateUrl: '/forecast.html',
+//     templateUrl: '/forecast.html',
 
-    bindings: {
-        recipes: '<',
-    },
+//     bindings: {
+//         recipes: '<',
+//     },
 
-    controller: ['WeatherService',
+//     controller: ['WeatherService',
 
-        function (forecastService) {
-            var vm = this;
+//         function (forecastService) {
+//             var vm = this;
 
-            vm.getForecast = () => { alert("coucou") };
-        }
-    ]
-});
+//             vm.getForecast = () => { alert("coucou") };
+//         }
+//     ]
+// });

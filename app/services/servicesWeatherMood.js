@@ -11,7 +11,7 @@ services.service('WeatherService', function ($http, $log, $q) {
 
     return {
 
-        getForecast() {
+        getTESTForecast() {
             alert("coucou");
             // var deferred = $q.defer();
             // $http.getForecast(OWM_KEY).then(function (response) {
