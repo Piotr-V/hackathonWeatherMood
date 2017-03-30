@@ -8,7 +8,7 @@ angular.module('weather.components').component("chooseCity", {
     templateUrl: '/chooseCity.html',
 
     bindings: {
-        recipes: '<',
+        forecast: '<',
     },
 
     controller: ['WeatherService',
@@ -16,7 +16,10 @@ angular.module('weather.components').component("chooseCity", {
         function (WeatherService) {
            
             this.getForecast = () => {
-                console.log(WeatherService.getOWM(this.query));
+                WeatherService.getOWM(this.query).then((data) => {
+                this.forecast = data;
+                console.log(data.main.temp)
+            }).catch((err) => {});
             };
         }
     ]

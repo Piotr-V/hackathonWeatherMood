@@ -8,7 +8,7 @@ angular.module('weather.components').component("forecastDisplay", {
     templateUrl: '/forecastDisplay.html',
 
     bindings: {
-        recipes: '<',
+        forecast: '<',
     },
 
     // controller: ['WeatherService', ]
