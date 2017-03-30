@@ -18,7 +18,7 @@ angular.module('weather.components').component("chooseCity", {
             this.getForecast = () => {
                 WeatherService.getOWM(this.query).then((data) => {
                 this.forecast = data;
-                console.log(data.main.temp)
+                console.log(data)
             }).catch((err) => {});
             };
         }
