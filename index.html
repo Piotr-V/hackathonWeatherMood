@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="WeatherMood">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="weatherMood/app/assets/CSS/style.css ">
+    <link rel="stylesheet" href="app/assets/CSS/style.css ">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-    <script src="weatherMood/app/app.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services/servicesWeatherMood.js"></script>
+    <script src="app/components/componentsWeatherMood.js"></script>
+    
     <title>Weather Mood by PatatasValdez Agency</title>
 </head>
+
 <body>
 
 
+    <div class="container">
+        <div class="col-sm-offset-3 col-sm-6">
+            <form>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" class="form-control" placeholder="Type your city for forecast" id="city">
+                     <button type="button" class="btn btn-primary" ng-click="$ctrl.getForecast()">Request</button>
+                </div>
+            </form>
+
+<forecast></forecast>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
