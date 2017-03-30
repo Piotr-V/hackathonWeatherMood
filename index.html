@@ -38,54 +38,19 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Historique</a></li>
                 </ul>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your City">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                <choose-city></choose-city>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <div class="container">
-        <h1>Weather Mood</h1>
-        <p>L'application qui adapte votre playlist au temps qu'il fait.</p>
-    </div>
-
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-1">
-                <p>Lundi 3 mars</p>
-                <p>Bordeaux</p>
-            </div>
-            <div class="col-sm-3">
-                <img src="http://meteoduquebec.com/images/winterkit/4.png">
-            </div>
-            <div class="col-sm-3">
-                <p>13°C</p>
-            </div>
-
-
-        </div>
-    </div>
-
+    <forecast-display></forecast-display>
 
     <footer>
         WeatherMood by PatatasValdez
     </footer>
-
-    <div class="container">
-        <div class="col-sm-offset-3 col-sm-6">
-           <choose-city></choose-city>
-
-            <forecast-display></forecast-display>
-
-        </div>
-    </div>
 
 </body>
 
