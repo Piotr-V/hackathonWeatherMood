@@ -3,7 +3,7 @@
 /**
  * The recipesList component
  */
-angular.module('weather.components').component("choose", {
+angular.module('weather.components').component("chooseCity", {
 
     templateUrl: '/chooseCity.html',
 
@@ -11,5 +11,13 @@ angular.module('weather.components').component("choose", {
         recipes: '<',
     },
 
-    // controller: ['WeatherService', ]
+    controller: ['WeatherService',
+
+        function (WeatherService) {
+           
+            this.getForecast = () => {
+                console.log(WeatherService.getOWM(this.query));
+            };
+        }
+    ]
 });

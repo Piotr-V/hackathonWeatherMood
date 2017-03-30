@@ -11,16 +11,15 @@ services.service('WeatherService', function ($http, $log, $q) {
 
     return {
 
-        getTESTForecast() {
-            alert("coucou");
-            // var deferred = $q.defer();
-            // $http.getForecast(OWM_KEY).then(function (response) {
-            //     deferred.resolve(response.data);
-            // }, function (error) {
-            //     deferred.reject(error);
-            //     $log.error(error);
-            // });
-            // return deferred.promise;
+        getOWM(query) {
+            var deferred = $q.defer();
+            $http.get("http://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=metric&APPID=3ffcb9c8de5af67ad5eabf718d1ee6d4").then(function (response) {
+                deferred.resolve(response.data);
+            }, function (error) {
+                deferred.reject(error);
+                $log.error(error);
+            });
+            return deferred.promise;
         }
     }
 
