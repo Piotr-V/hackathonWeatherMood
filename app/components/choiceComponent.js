@@ -1,11 +1,8 @@
 'use strict';
 
-/**
- * The recipesList component
- */
 angular.module('weather.components').component("chooseCity", {
 
-    templateUrl: '/chooseCity.html',
+    templateUrl: 'app/views/chooseCity.html',
 
     bindings: {
         forecast: '<',
@@ -18,7 +15,7 @@ angular.module('weather.components').component("chooseCity", {
             this.getForecast = () => {
                 WeatherService.getOWM(this.query).then((data) => {
                 this.forecast = data;
-                console.log(data.main.temp)
+                console.log(data)
             }).catch((err) => {});
             };
         }

@@ -1,15 +1,12 @@
 'use strict';
 
-/**
- * The recipesList component
- */
 angular.module('weather.components').component("forecastDisplay", {
 
-    templateUrl: '/forecastDisplay.html',
+    templateUrl: 'app/views/forecastDisplay.html',
 
-    bindings: {
-        forecast: '<',
-    },
+    // bindings: {
+    //     forecast: '<',
+    // },
 
     // controller: ['WeatherService', ]
 });
