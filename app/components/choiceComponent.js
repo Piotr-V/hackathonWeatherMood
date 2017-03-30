@@ -1,8 +1,5 @@
 'use strict';
 
-/**
- * The recgit ipesList component
- */
 angular.module('weather.components').component("chooseCity", {
 
     templateUrl: 'app/views/chooseCity.html',

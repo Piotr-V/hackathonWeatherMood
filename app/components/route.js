@@ -25,8 +25,17 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 //     forecacst: ['WeatherService', function (WeatherService) {
                 //         return WeatherService.get();
                 //     }]
-
-
             })
+
+            .state({
+                name: 'channel',
+                url: 'app/views/channel',
+                component: 'channel',
+                // resolve: {
+                //     forecacst: ['WeatherService', function (WeatherService) {
+                //         return WeatherService.get();
+                //     }]
+            })
+
     }
 ]);
