@@ -8,7 +8,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
         $stateProvider
             .state({
                 name: 'chooseCity',
-                url: '/views/chooseCity',
+                url: 'app/views/chooseCity',
                 component: 'chooseCity',
                 resolve: {
                     forecast: ['WeatherService', function (WeatherService) {
@@ -19,7 +19,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
 
             .state({
                 name: 'forecastDiplay',
-                url: '/views/forecastDiplay',
+                url: 'app/views/forecastDiplay',
                 component: 'forecastDisplay',
                 // resolve: {
                 //     forecacst: ['WeatherService', function (WeatherService) {

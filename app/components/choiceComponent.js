@@ -5,7 +5,7 @@
  */
 angular.module('weather.components').component("chooseCity", {
 
-    templateUrl: '/views/chooseCity.html',
+    templateUrl: 'app/views/chooseCity.html',
 
     bindings: {
         forecast: '<',
