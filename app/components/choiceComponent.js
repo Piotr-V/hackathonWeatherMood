@@ -1,11 +1,11 @@
 'use strict';
 
 /**
- * The recipesList component
+ * The recgit ipesList component
  */
 angular.module('weather.components').component("chooseCity", {
 
-    templateUrl: '/chooseCity.html',
+    templateUrl: 'app/views/chooseCity.html',
 
     bindings: {
         forecast: '<',
