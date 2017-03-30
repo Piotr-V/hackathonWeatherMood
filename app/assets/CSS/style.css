@@ -1,5 +1,5 @@
 body{
-    background: url('../img/contexto10.jpg');
+    background: url('../img/poisson.jpg');
     background-size: cover;
     color: white;
 }
@@ -33,4 +33,13 @@ h1{
 }
 #temp{
     font-size: 5em;
+}
+#channel{
+    background: radial-gradient( rgba(255,255,255,0), rgba(255,255,255,1))
+}
+#channel {
+  background-color: lightgreen;
+  border: 2px solid black;
+  border-radius: 6px;
+
 }
