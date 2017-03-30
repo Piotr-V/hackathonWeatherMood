@@ -46,3 +46,10 @@ h1{
 .icon{
     width: 100px;
 }
+.player{
+    text-align: center;
+    margin-top: 50px;
+}
+.ng-scope{
+    max-height: 100%;
+}
