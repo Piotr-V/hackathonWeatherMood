@@ -44,7 +44,7 @@
                 <p id="date">{{$ctrl.forecast.weather[0].description}}</p>
             </div>
             <div class="col-sm-3 ">
-                <img src="/app/assets/img/{{$ctrl.forecast.weather[0].icon}}.png">
+                <img class="icon" src="/app/assets/img/{{$ctrl.forecast.weather[0].icon}}.png">
             </div>
             <div class="col-sm-3 ">
                 <p id="temp">{{$ctrl.forecast.main.temp}}°C</p>
@@ -54,7 +54,12 @@
 
 
 </div>
-<channel></channel>
+<div ng-if="{{$ctrl.forecast.weather[0].icon}} == ('01d' || '01n') ">
+    <channel-sunny></channel-sunny>
+</div>
+<div ng-if="">
+    <channel></channel>
+</div>
 
 <footer>
     WeatherMood by PatatasValdez
