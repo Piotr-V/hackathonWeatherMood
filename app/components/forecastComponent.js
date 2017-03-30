@@ -3,20 +3,13 @@
 /**
  * The recipesList component
  */
-angular.module('weather.components').component("forecast", {
+angular.module('weather.components').component("forecastDisplay", {
 
-    templateUrl: '/forecast.html',
+    templateUrl: '/forecastDisplay.html',
 
     bindings: {
         recipes: '<',
     },
 
-    controller: ['WeatherService',
-
-        function (forecastService) {
-            var vm = this;
-
-            vm.getForecast = () => { alert("coucou") };
-        }
-    ]
+    // controller: ['WeatherService', ]
 });
