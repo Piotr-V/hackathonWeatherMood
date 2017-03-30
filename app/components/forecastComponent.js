@@ -3,9 +3,9 @@
 /**
  * The recipesList component
  */
-components.component("forecast", {
+angular.module('weather.components').component("forecast", {
 
-    templateUrl: '/list.html',
+    templateUrl: '/forecast.html',
 
     bindings: {
         recipes: '<',
