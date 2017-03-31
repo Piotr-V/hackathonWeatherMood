@@ -2,6 +2,8 @@ body{
     background: url('../img/poisson.jpg');
     background-size: cover;
     color: white;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 .container{
     text-align: center;
@@ -49,8 +51,10 @@ h1{
 .player{
     text-align: center;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 .deezer-widget-player{
     height: 400px;
 }
+
 
