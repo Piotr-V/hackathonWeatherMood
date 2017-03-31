@@ -56,31 +56,58 @@
 </div>
 
 <div class="container player" ng-show="first">
-    <div ng-if="$ctrl.forecast.weather[0].description == 'clear sky'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '01d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2963725042" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'few clouds'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '01n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2963725042" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '02d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964020762" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'scattered clouds' ">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '02n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964020762" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '03d' ">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964035402" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'broken clouds'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '03n' ">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964035402" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '04d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964037222" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'shower rain'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '04n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964037222" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '09d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964039802" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'rain'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '09n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964039802" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '10d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964046642" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'thunderstorm'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '10n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964046642" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '11d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964050882" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'snow'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '11n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964050882" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '13d'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964054682" width="700" height="350"></iframe>
     </div>
-    <div ng-if="$ctrl.forecast.weather[0].description == 'mist'">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '13n'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964054682" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '50d'">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964062682" width="700" height="350"></iframe>
+    </div>
+    <div ng-if="$ctrl.forecast.weather[0].icon == '50n'">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964062682" width="700" height="350"></iframe>
     </div>
 
