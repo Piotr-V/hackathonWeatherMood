@@ -23,7 +23,9 @@
                     <label for="city">City:</label>
                     <input type="text" class="form-control" placeholder="Type your city for forecast" id="city" ng-model="$ctrl.query">
                 </div>
+                <span ng-click="first=true">
                 <button type="button" class="btn btn-default" ng-click="$ctrl.getForecast()">Submit</button>
+                </span>
             </form>
         </div>
         <!-- /.navbar-collapse -->
@@ -36,26 +38,28 @@
     <p class="description">L'application qui adapte votre playlist au temps qu'il fait.</p>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" ng-show="first">
     <div id="meteo">
         <div class="row">
             <div class="col-sm-4 col-sm-offset-1 ">
                 <p id="town">{{$ctrl.forecast.name}}</p>
                 <p id="date">{{$ctrl.forecast.weather[0].description}}</p>
+                <p id="date">{{$ctrl.forecast.weather[0].icon}}</p>
             </div>
             <div class="col-sm-3 ">
-                <img src="/app/assets/img/{{$ctrl.forecast.weather[0].icon}}.png">
+                <img class="icon" src="/app/assets/img/{{$ctrl.forecast.weather[0].icon}}.png">
             </div>
             <div class="col-sm-3 ">
                 <p id="temp">{{$ctrl.forecast.main.temp}}°C</p>
             </div>
         </div>
     </div>
+</div>
 
+<div class="container player" ng-show="first">
+    <div ng-if="$ctrl.forecast.weather[0].icon == '01n' ">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=2964037222" width="700" height="350"></iframe>
+    </div>
 
 </div>
-<channel></channel>
 
-<footer>
-    WeatherMood by PatatasValdez
-</footer>
